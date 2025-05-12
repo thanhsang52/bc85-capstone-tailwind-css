@@ -1,15 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solid Landing Page</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="./css/index.css">
 </head>
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+
+<body class="bg-white text-gray-800">
+
+    <!-- HEADER -->
+    <header class="fixed left-0 top-0 z-999 w-full ">
+        
+        <div class="max-w-7xl mx-auto px-4 py-4 flex  items-center">
+            <div class="flex w-full items-center justify-between xl:w-1/4"><a href="/"><img alt="logo" loading="lazy" width="119.03"
+                        height="30" decoding="async" data-nimg="1" class="hidden w-full dark:block" src="/images/logo/logo-dark.svg"
+                        style="color: transparent;"><img alt="logo" loading="lazy" width="119.03" height="30" decoding="async"
+                        data-nimg="1" class="w-full dark:hidden" src="/images/logo/logo-light.svg"
+                        style="color: transparent;"></a><button aria-label="button for menu toggle" class="block xl:hidden"><span
+                        class="relative block h-5.5 w-5.5 cursor-pointer"><span
+                            class="du-block absolute right-0 h-full w-full"><span
+                                class="relative left-0 top-0 my-1 block h-0.5 w-0 rounded-sm bg-black delay-[0] duration-200 ease-in-out dark:bg-white !w-full delay-300"></span><span
+                                class="relative left-0 top-0 my-1 block h-0.5 w-0 rounded-sm bg-black delay-150 duration-200 ease-in-out dark:bg-white delay-400 !w-full"></span><span
+                                class="relative left-0 top-0 my-1 block h-0.5 w-0 rounded-sm bg-black delay-200 duration-200 ease-in-out dark:bg-white !w-full delay-500"></span></span><span
+                            class="du-block absolute right-0 h-full w-full rotate-45"><span
+                                class="absolute left-2.5 top-0 block h-full w-0.5 rounded-sm bg-black delay-300 duration-200 ease-in-out dark:bg-white !h-0 delay-[0]"></span><span
+                                class="delay-400 absolute left-0 top-2.5 block h-0.5 w-full rounded-sm bg-black duration-200 ease-in-out dark:bg-white dealy-200 !h-0"></span></span></span></button>
+            </div>
+            <nav class="space-x-4">
+                <ul class="flex flex-col gap-5 xl:flex-row xl:items-center xl:gap-10">
+                    <li><a class="text-primary hover:text-primary" href="#">Home</a></li>
+                    <li><a class="hover:text-primary" href="/#features">Features</a></li>
+                    <li><a class="hover:text-primary" href="#">Blog</a></li>
+                    <li><a class="hover:text-primary" href="#">Docs</a></li>
+                    <li class="group relative"><button
+                            class="flex cursor-pointer items-center justify-between gap-3 hover:text-primary">Pages<span><svg
+                                    class="h-3 w-3 cursor-pointer fill-waterloo group-hover:fill-primary"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z">
+                                    </path>
+                                </svg></span></button>
+                       
+                    </li>
+                    <li><a class="hover:text-primary" href="/support">Support</a></li>
+                </ul>
+            </nav>
+            <div class="ml-auto mt-7 flex items-center gap-6 xl:mt-0"><button
+                    class="hidden h-[38px] w-[38px] items-center justify-center rounded-full bg-white text-waterloo dark:bg-black sm:flex"><svg
+                        width="20" height="20" viewBox="0 0 18 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_369_1884)">
+                            <path
+                                d="M16.9347 15.3963L12.4816 11.7799C14.3168 9.26991 14.1279 5.68042 11.8338 3.41337C10.6194 2.19889 9.00003 1.52417 7.27276 1.52417C5.54549 1.52417 3.92617 2.19889 2.71168 3.41337C0.201738 5.92332 0.201738 10.0256 2.71168 12.5355C3.92617 13.75 5.54549 14.4247 7.27276 14.4247C8.91907 14.4247 10.4574 13.804 11.6719 12.6975L16.179 16.3409C16.287 16.4219 16.4219 16.4759 16.5569 16.4759C16.7458 16.4759 16.9077 16.3949 17.0157 16.26C17.2316 15.9901 17.2046 15.6122 16.9347 15.3963ZM7.27276 13.2102C5.86935 13.2102 4.5739 12.6705 3.57532 11.6719C1.52418 9.62076 1.52418 6.30116 3.57532 4.27701C4.5739 3.27843 5.86935 2.73866 7.27276 2.73866C8.67617 2.73866 9.97162 3.27843 10.9702 4.27701C13.0213 6.32815 13.0213 9.64775 10.9702 11.6719C9.99861 12.6705 8.67617 13.2102 7.27276 13.2102Z"
+                                fill="currentColor"></path>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_369_1884">
+                                <rect width="17.2727" height="17.2727" fill="white" transform="translate(0.363647 0.363647)"></rect>
+                            </clipPath>
+                        </defs>
+                    </svg></button><button aria-label="theme toggler"
+                    class="bg-gray-2 dark:bg-dark-bg absolute right-17 mr-1.5 flex cursor-pointer items-center justify-center rounded-full text-black dark:text-white lg:static"><img
+                        alt="logo" loading="lazy" width="21" height="21" decoding="async" data-nimg="1" class="dark:hidden"
+                        src="./images/icon/icon-moon.svg" style="color: transparent;"><img alt="logo" loading="lazy" width="22"
+                        height="22" decoding="async" data-nimg="1" class="hidden dark:block" src="./images/icon/icon-sun.svg"
+                        style="color: transparent;"></button>
+                    <a class="text-regular font-medium text-waterloo hover:text-primary"
+                    href="#">Sign In</a>
+                    <a class="flex items-center justify-center rounded-full bg-blue-700 px-7.5 py-2.5 text-white text-regular text-white duration-300 ease-in-out hover:bg-primaryho"
+                    href="#">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="text-center py-20 px-4 bg-gray-50">
+        <div class="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
+            <div class="flex lg:items-center lg:gap-8 xl:gap-32.5">
+                <div class=" md:w-1/2">
+                    <h4 class="mb-4.5 text-lg font-medium text-black dark:text-white">🔥 Solid - A Complete SaaS Starter
+                        Template for SaaS</h4>
+                    <h1 class="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero ">Robust SaaS Boilerplate
+                        and Starter for<span
+                            class="relative ml-2.5 inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark ">Next.js</span>
+                    </h1>
+                    <p>Packed with all the key integrations you need for swift SaaS startup launch, including - Authentication,
+                        Database, Sanity Blog, Essential UI Components, Business Pages and More. Built-winth - Next.js, React 18
+                        and TypeScript.</p>
+                    <div class="mt-10"><a aria-label="get started button"
+                            class="inline-block rounded-full bg-black px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
+                            href="/auth/signup">Get Started</a></div>
+                </div>
+                <div class="animate_right hidden md:w-1/2 lg:block">
+                    <div class="relative 2xl:-mr-7.5">
+                        <div class=" relative aspect-[700/444] w-full">
+                            <img alt="Hero" loading="lazy" decoding="async"
+                                data-nimg="fill" class="shadow-solid-l dark:hidden" src="/images/hero/hero-light.svg"
+                                style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+                            <img
+                                alt="Hero" loading="lazy" decoding="async" data-nimg="fill"
+                                class="hidden shadow-solid-l dark:block" src="/images/hero/hero-dark.svg"
+                                style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- LOGO SECTION -->
+    <section class="border border-x-0 border-y-stroke bg-alabaster py-11 dark:border-y-strokedark dark:bg-black">
+        <div class="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0 container">
+            <div class="grid grid-cols-3 items-center justify-center gap-7.5 md:grid-cols-6 lg:gap-12.5 xl:gap-29">
+                <a href="#" class="animate_top mx-w-full relative block h-10 w-[98px]" style="opacity: 1; transform: none;">
+                    <img alt="Client" loading="lazy" decoding="async" data-nimg="fill"
+                        class="opacity-65 transition-all duration-300 hover:opacity-100 dark:hidden"
+                        src="/images/brand/brand-light-01.svg"
+                        style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"><img alt="Client"
+                        loading="lazy" class="hidden opacity-50 transition-all duration-300 hover:opacity-100 dark:block"
+                        src="/images/brand/brand-dark-01.svg"
+                        style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"></a>
+                <a href="#" class="animate_top mx-w-full relative block h-10 w-[98px]" style="opacity: 1; transform: none;">
+                    <img alt="Client" loading="lazy" decoding="async" data-nimg="fill"
+                        class="opacity-65 transition-all duration-300 hover:opacity-100 dark:hidden"
+                        src="/images/brand/brand-light-02.svg"
+                        style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+                    <img alt="Client" loading="lazy"
+                        class="hidden opacity-50 transition-all duration-300 hover:opacity-100 dark:block"
+                        src="/images/brand/brand-dark-02.svg"
+                        style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"></a>
+                <a href="#" class="animate_top mx-w-full relative block h-10 w-[98px]" style="opacity: 1; transform: none;">
+                    <img alt="Client" loading="lazy" decoding="async" data-nimg="fill"
+                        class="opacity-65 transition-all duration-300 hover:opacity-100 dark:hidden"
+                        src="/images/brand/brand-light-03.svg"
+                        style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+                    <img alt="Client" loading="lazy"
+                        class="hidden opacity-50 transition-all duration-300 hover:opacity-100 dark:block"
+                        src="/images/brand/brand-dark-03.svg"
+                        style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"></a>
+                <a href="#" class="animate_top mx-w-full relative block h-10 w-[98px]" style="opacity: 1; transform: none;">
+                    <img alt="Client" loading="lazy" decoding="async" data-nimg="fill"
+                        class="opacity-65 transition-all duration-300 hover:opacity-100 dark:hidden"
+                        src="/images/brand/brand-light-04.svg"
+                        style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+                    <img alt="Client" loading="lazy"
+                        class="hidden opacity-50 transition-all duration-300 hover:opacity-100 dark:block"
+                        src="/images/brand/brand-dark-04.svg"
+                        style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"></a>
+                <a href="#" class="animate_top mx-w-full relative block h-10 w-[98px]" style="opacity: 1; transform: none;">
+                    <img alt="Client" loading="lazy" decoding="async" data-nimg="fill"
+                        class="opacity-65 transition-all duration-300 hover:opacity-100 dark:hidden"
+                        src="/images/brand/brand-light-05.svg"
+                        style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+                    <img alt="Client" loading="lazy"
+                        class="hidden opacity-50 transition-all duration-300 hover:opacity-100 dark:block"
+                        src="/images/brand/brand-dark-05.svg"
+                        style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"></a>
+                <a href="#" class="animate_top mx-w-full relative block h-10 w-[98px]" style="opacity: 1; transform: none;">
+                    <img alt="Client" loading="lazy" decoding="async" data-nimg="fill"
+                        class="opacity-65 transition-all duration-300 hover:opacity-100 dark:hidden"
+                        src="/images/brand/brand-light-06.svg"
+                        style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;">
+                    <img alt="Client" loading="lazy"
+                        class="hidden opacity-50 transition-all duration-300 hover:opacity-100 dark:block"
+                        src="/images/brand/brand-dark-06.svg"
+                        style="position: absolute; height: 100%; width: 100%; inset: 0px; color: transparent;"></a>
+            </div>
+        </div>
+    </section>
+    <!-- FEATURES SECTION -->
+    <section class="py-20 bg-white text-center">
+        <div class="animate_top mx-auto text-center" style="opacity: 1; transform: none;">
+            <div
+                class="mb-4 inline-block rounded-full bg-zumthor px-4.5 py-1.5 dark:border dark:border-strokedark dark:bg-blacksection">
+                <span class="text-sectiontitle font-medium text-black dark:text-white">SOLID FEATURES</span></div>
+            <h2 class="mx-auto mb-4 text-3xl font-bold text-black dark:text-white md:w-4/5 xl:w-1/2 xl:text-sectiontitle3">Core
+                Features of Solid</h2>
+            <p class="mx-auto md:w-4/5 lg:w-3/5 xl:w-[46%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
+                ante in maximus.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+            <div class="p-6 border rounded-lg shadow hover:shadow-md transition">
+                <h3 class="text-xl font-semibold mb-2">Responsive Design</h3>
+                <p class="text-gray-500">Looks great on all screen sizes without effort.</p>
+            </div>
+            <div class="p-6 border rounded-lg shadow hover:shadow-md transition">
+                <h3 class="text-xl font-semibold mb-2">Easy to Customize</h3>
+                <p class="text-gray-500">Modify layout and colors easily with utility classes.</p>
+            </div>
+            <div class="p-6 border rounded-lg shadow hover:shadow-md transition">
+                <h3 class="text-xl font-semibold mb-2">Fast Performance</h3>
+                <p class="text-gray-500">Optimized for speed and efficiency using CDN.</p>
+            </div>
+        </div>
+    </section>
+    <!-- PRICING SECTION -->
+    <section class="py-20 bg-gray-50 text-center">
+        <h2 class="text-3xl font-bold mb-4">Simple Pricing</h2>
+        <p class="text-gray-600 mb-10 max-w-xl mx-auto">
+            Choose a plan that works for you and your team.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+            <!-- Basic -->
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">$ 100<span
+                        class="text-regular text-waterloo dark:text-manatee">/month</span></h3>
+                <h4 class="mb-2.5 text-para2 font-medium text-black dark:text-white">Small Pack</h4>
+                <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
+                <div class="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
+                    <ul>
+                        <li class="mb-4 text-black last:mb-0 dark:text-manatee">300 GB Storage</li>
+                        <li class="mb-4 text-black last:mb-0 dark:text-manatee">Unlimited Photos and Videos</li>
+                        <li class="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">Exclusive Support</li>
+                        <li class="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">Custom Branding Strategy</li>
+                    </ul>
+                </div><button aria-label="purchase this plan"
+                    class="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"><span
+                        class="duration-300 group-hover/btn:pr-2"> Get the Plan</span><svg width="14" height="14" viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.4767 6.16701L6.00668 1.69701L7.18501 0.518677L13.6667 7.00034L7.18501 13.482L6.00668 12.3037L10.4767 7.83368H0.333344V6.16701H10.4767Z"
+                            fill="currentColor"></path>
+                    </svg></button>
+            </div>
+            <!-- Pro -->
+            <div class="bg-white p-6 rounded-lg shadow border-2 border-blue-600">
+                <div class="absolute -right-3.5 top-7.5 -rotate-90 rounded-bl-full rounded-tl-full bg-primary px-4.5 py-1.5 text-metatitle font-medium uppercase text-white">
+                    popular</div>
+                <h3 class="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">$ 200<span
+                        class="text-regular text-waterloo dark:text-manatee">/month</span></h3>
+                <h4 class="mb-2.5 text-para2 font-medium text-black dark:text-white">Medium Pack</h4>
+                <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
+                <div class="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
+                    <ul>
+                        <li class="mb-4 text-black last:mb-0 dark:text-manatee">300 GB Storage</li>
+                        <li class="mb-4 text-black last:mb-0 dark:text-manatee">Unlimited Photos and Videos</li>
+                        <li class="mb-4 text-black last:mb-0 dark:text-manatee">Exclusive Support</li>
+                        <li class="mb-4 text-black opacity-40 last:mb-0 dark:text-manatee">Custom Branding Strategy</li>
+                    </ul>
+                </div><button aria-label="purchase this plan"
+                    class="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"><span
+                        class="duration-300 group-hover/btn:pr-2"> Get the Plan</span><svg width="14" height="14" viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.4767 6.16701L6.00668 1.69701L7.18501 0.518677L13.6667 7.00034L7.18501 13.482L6.00668 12.3037L10.4767 7.83368H0.333344V6.16701H10.4767Z"
+                            fill="currentColor"></path>
+                    </svg></button>
+            </div>
+            <!-- Team -->
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h3 class="mb-7.5 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle3">$ 300<span
+                        class="text-regular text-waterloo dark:text-manatee">/month</span></h3>
+                <h4 class="mb-2.5 text-para2 font-medium text-black dark:text-white">Large Pack</h4>
+                <p>Lorem ipsum dolor sit amet, consec adipisicing elit.</p>
+                <div class="mt-9 border-t border-stroke pb-12.5 pt-9 dark:border-strokedark">
+                    <ul>
+                        <li class="mb-4 text-black last:mb-0 dark:text-manatee">300 GB Storage</li>
+                        <li class="mb-4 text-black last:mb-0 dark:text-manatee">Unlimited Photos and Videos</li>
+                        <li class="mb-4 text-black last:mb-0 dark:text-manatee ">Exclusive Support</li>
+                        <li class="mb-4 text-black last:mb-0 dark:text-manatee ">Custom Branding Strategy</li>
+                    </ul>
+                </div><button aria-label="purchase this plan"
+                    class="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"><span
+                        class="duration-300 group-hover/btn:pr-2"> Get the Plan</span><svg width="14" height="14" viewBox="0 0 14 14"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.4767 6.16701L6.00668 1.69701L7.18501 0.518677L13.6667 7.00034L7.18501 13.482L6.00668 12.3037L10.4767 7.83368H0.333344V6.16701H10.4767Z"
+                            fill="currentColor"></path>
+                    </svg></button>
+            </div>
+        </div>
+    </section>
+   
+   
+    <!-- FOOTER -->
+    <footer class="bg-gray-50 text-gray-700">
+        <div class="max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-5 gap-8">
+            <!-- Logo + mô tả -->
+            <div class="md:col-span-2">
+                <h2 class="text-xl font-bold text-gray-900">Solid</h2>
+                <p class="text-gray-600 mb-10 mt-5">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <p class="mb-1.5 text-sectiontitle uppercase tracking-[5px]">contact</p>
+                <a href="#" class="text-itemtitle font-medium text-black dark:text-white">hello@solid.com</a>
+            </div>
+    
+            <!-- Company -->
+            <div>
+                <h3 class="text-sm font-semibold mb-3 uppercase text-gray-800">Quick Links</h3>
+                <ul>
+                    <li><a href="#" class="mb-3 inline-block hover:text-primary">Home</a></li>
+                    <li><a href="#" class="mb-3 inline-block hover:text-primary">Product</a></li>
+                    <li><a href="#" class="mb-3 inline-block hover:text-primary">Careers</a></li>
+                    <li><a href="#" class="mb-3 inline-block hover:text-primary">Pricing</a></li>
+                </ul>
+            </div>
+    
+            <!-- Resources -->
+            <div>
+                <h3 class="text-sm font-semibold mb-3 uppercase text-gray-800">Support</h3>
+                <ul>
+                    <li><a href="#" class="mb-3 inline-block hover:text-primary">Company</a></li>
+                    <li><a href="#" class="mb-3 inline-block hover:text-primary">Press media</a></li>
+                    <li><a href="#" class="mb-3 inline-block hover:text-primary">Our Blog</a></li>
+                    <li><a href="#" class="mb-3 inline-block hover:text-primary">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <!-- Legal -->
+            <div class="animate_top" style="opacity: 1; transform: none;">
+                <h4 class="text-sm font-semibold mb-3 uppercase text-gray-800">Newsletter</h4>
+                <p class="mb-4 w-[90%]">Subscribe to receive future updates</p>
+                <form>
+                    <div class="relative"><input placeholder="Email address" required=""
+                            class="w-full rounded-full border border-stroke px-6 py-3 shadow-solid-11 focus:border-primary focus:outline-none dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-primary"
+                            type="email" value=""><button aria-label="signup to newsletter" class="absolute right-0 p-4"><svg
+                                class="fill-[#757693] hover:fill-primary dark:fill-white" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_48_1487)">
+                                    <path
+                                        d="M3.1175 1.17318L18.5025 9.63484C18.5678 9.67081 18.6223 9.72365 18.6602 9.78786C18.6982 9.85206 18.7182 9.92527 18.7182 9.99984C18.7182 10.0744 18.6982 10.1476 18.6602 10.2118C18.6223 10.276 18.5678 10.3289 18.5025 10.3648L3.1175 18.8265C3.05406 18.8614 2.98262 18.8792 2.91023 18.8781C2.83783 18.8769 2.76698 18.857 2.70465 18.8201C2.64232 18.7833 2.59066 18.7308 2.55478 18.6679C2.51889 18.6051 2.50001 18.5339 2.5 18.4615V1.53818C2.50001 1.46577 2.51889 1.39462 2.55478 1.33174C2.59066 1.26885 2.64232 1.2164 2.70465 1.17956C2.76698 1.14272 2.83783 1.12275 2.91023 1.12163C2.98262 1.12051 3.05406 1.13828 3.1175 1.17318ZM4.16667 10.8332V16.3473L15.7083 9.99984L4.16667 3.65234V9.16651H8.33333V10.8332H4.16667Z"
+                                        fill=""></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_48_1487">
+                                        <rect width="20" height="20" fill="white"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg></button></div>
+                </form>
+            </div>
+        </div>
+    
+        <!-- Bottom -->
+        <div class="border-t border-gray-200 py-6 text-center text-sm text-gray-500">
+            <p>&copy; 2025 Solid. All rights reserved.</p>
+        </div>
+    </footer>
+  
+  
+
 </body>
+
 </html>
