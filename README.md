@@ -6,13 +6,13 @@ Bài tập Capstone Tailwind CSS
 
 ### Huỳnh Thanh Sang:
 
--Tạo git
--Layout
--Header
--Hero
--Logo
--Price
--Footer
+- Tạo git
+- Layout
+- Header
+- Hero
+- Logo
+- Price
+- Footer
 
 ### Đặng Tiến Dũng:
 
