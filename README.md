@@ -4,7 +4,8 @@ Bài tập Capstone Tailwind CSS
 
 # Phân công:
 
-Huỳnh Thanh Sang:
+### Huỳnh Thanh Sang:
+
 -Tạo git
 -Layout
 -Header
@@ -13,6 +14,7 @@ Huỳnh Thanh Sang:
 -Price
 -Footer
 
-## Đặng Tiến Dũng:
+### Đặng Tiến Dũng:
 
+-
 -
