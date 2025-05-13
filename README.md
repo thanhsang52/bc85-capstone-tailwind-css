@@ -12,6 +12,7 @@ Bài tập Capstone Tailwind CSS
 - Hero
 - Logo
 - Price
+- Support
 - Footer
 
 ### Đặng Tiến Dũng:
